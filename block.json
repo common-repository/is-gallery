@@ -1,0 +1,82 @@
+{
+	"apiVersion": "2",
+	"name": "imagesnippets/is-gallery",
+	"title": "ImageSnippets Gallery Block",
+	"category": "media",
+	"description": "Responsive image gallery block for images from Imagesnippets.com",
+	"icon": "layout",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "is-gallery",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"keywords": [
+		"Imagesnippets Gallery",
+		"Gutenburg Block",
+		"dynamic",
+		"image",
+		"media",
+		"gallery",
+		"display metadata"
+	],
+	"styles": [
+		{ "name": "smallest", "label": "Smallest Thumbnails", "isDefault": true },
+		{ "name": "smaller", "label": "Smaller Thumbnails" },
+		{ "name": "small", "label": "Small Thumbnails" },
+		{ "name": "large", "label": "Large Thumbnails" },
+		{ "name": "larger", "label": "Larger Thumbnails" },
+		{ "name": "largest", "label": "Largest Thumbnails" }
+	],
+	"attributes": {
+		"isGallery": {
+			"type": "string",
+			"default": ""
+		},
+		"displayCaption": {
+			"type": "boolean",
+			"default": false
+		},
+		"displayTitle": {
+			"type": "boolean",
+			"default": false
+		},
+		"isUserid": {
+			"type": "string",
+			"default": ""
+		},
+		"alignment": {
+			"type": "string",
+			"default": "left"
+		},
+		"order": {
+			"type": "string",
+			"default": "asc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "title"
+		},
+		"limit": {
+			"type": "number",
+			"default": 40
+		},
+		"style": {
+			"type": "string",
+			"default": "wp-block-imagesnippets-is-gallery"
+		}
+	},
+	"example": {
+		"attributes": {
+			"isGallery": "hs_gallery02",
+			"displayCaption": "true",
+			"displayTitle": "true",
+			"userid": "",
+			"alignment": "center",
+			"order": "asc",
+			"orderBy": "title",
+			"limit": "3"
+		}
+	}
+}

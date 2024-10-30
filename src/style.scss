@@ -1,0 +1,125 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .is-style-smallest {
+	figure.gallery{
+		width: 70px;
+		height: auto;
+		font-size: .5em;
+	}
+} 
+.is-style-smaller {
+	figure.gallery{
+		width: 85px;
+		height: auto;
+		font-size: .6em;
+	}
+} 
+.is-style-small {
+	figure.gallery{
+		width: 100px;
+		height: auto;
+		font-size: .7em;
+	}
+}
+.is-style-large {
+	figure.gallery{
+		width: 120px;
+		height: auto;
+		font-size: .8em;
+	}
+}
+.is-style-larger {
+	figure.gallery{
+		width: 150px;
+		height: auto;
+		font-size: .9em;
+	}
+}
+.is-style-largest {
+	figure.gallery{
+		width: 180px;
+		height: auto;
+		font-size: 1em;
+	}
+}
+
+.wp-block-imagesnippets-is-gallery {
+	padding: 2px;
+
+	
+	div.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-content: space-between;
+		align-items: center;
+		padding: 0 5% 5% 5%;
+		border: 1px solid #777;
+	}
+
+	figure.gallery {
+		margin: 1em;
+	/*	border: 1px solid #777; */
+		position: relative;
+	}
+
+	figure.gallery:hover {
+		border: 1px solid #ccc;
+		opacity: 0.9;
+		transform: scale(1.1);
+	}
+
+	figure.gallery img {
+		width: 100%;
+		height: Auto;
+		opacity: 1;
+		object-fit: scale-down;
+	}
+
+	figcaption.desc {
+		padding: 1px;
+		margin: 0;
+		line-height: 1;
+		opacity: 0.5;
+		position: relative;
+		bottom: 0;
+		right: 0;
+		overflow: hidden;
+		max-width: 100%;
+		text-overflow: ellipsis;
+		width: fit-content;
+		white-space: nowrap;
+	/*	text-align: right;
+		color: black;
+		background-color: #ccc; 
+	*/
+	}
+
+	p.title {
+		text-transform: uppercase;
+		margin: 0;
+		padding-left: 1em;
+		padding-right: 1em;
+		font-size: 1em;
+	}
+
+	p.header {
+		font-weight: bold;
+		margin: 1em;
+		font-size: 1em;
+	}
+
+	p.footer {
+		text-transform: capitalize;
+		font-size: 0.75em;
+		font-family: "Brush Script MT", Tahoma, Verdana, sans-serif;
+		margin: 0;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+
